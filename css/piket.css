@@ -301,9 +301,10 @@ footer {
         display: flex;
         position: relative;
     }
-
+ 
     .nav ul {
         width: 100%;
+        height: 100vh;
     }
 
     nav ul {
@@ -314,11 +315,11 @@ footer {
         top: 0;
         left: 0;
         right: 0;
-        height: 60vh;
-        background-color: #ffffff;
+        background-color: #f8f8f8;
+        backdrop-filter: blur(3px);
         text-align: center;
-        transform: translateY(-100%);
-        transition: 0.6s;
+        transform: translateX(100%);
+        transition: 0.7s;
     }
 
     .slide {

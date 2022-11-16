@@ -351,11 +351,11 @@ footer {
         top: 0;
         left: 0;
         right: 0;
-        background-color: #f8f8f8cc;
+        background-color: #f8f8f8;
         backdrop-filter: blur(3px);
         text-align: center;
-        transform: translateY(-100%);
-        transition: 0.3s;
+        transform: translateX(100%);
+        transition: 0.7s;
     }
 
     .slide {
