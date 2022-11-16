@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKAJE DUA | Jadwal Mata Pelajaran</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mapel.css">
+    <link rel="icon" type="images/x-icon" href="images/tkj-100.png">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="nav wrapper">
+                <h3>TEKAJE DUA</h3>
+
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="struktur.html">Struktur</a></li>
+                    <li><a href="album.html">Album</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <a href="#header" class="scroll"><img src="images/double-up-arrow.png" alt=""></a>
+
+        <header id="header">
+            <div class="header wrapper">
+                <img class="main-img" src="images/mapel.png" alt="">
+
+                <div class="desc">
+                    <p><span>TKJ DUA</span></p>
+                    <h1>Jadwal Mata Pelajaran</h1>
+                    <P>Jadwal mata pelajaran kelas Sebelas Teknik Komputer Jaringan Dua Setelah di revisi.
+                        Jadwal mata pelajaran di revisi pada tanggal 1 Agustus 2022.</P>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section wrapper">
+
+                <img data-aos="fade-up" src="images/jadwal-fullday.jpeg" alt="">
+                <img data-aos="fade-up" src="images/normatif.png" alt="">
+                <img data-aos="fade-up" src="images/produktif.jpeg" alt="">
+
+                <div data-aos="fade-up" class="download">
+                    <a href="images/jadwal-unduh.pdf" download="jadwal_1-8-2022_src_tekajedua">Unduh PDF</a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer data-aos="fade-up">
+            <div class="footer wrapper">
+                <div class="footer-desc">
+                    <h1>TEKAJE DUA</h1>
+                    <p>Here we make a lot of memory.</p>
+                </div>
+
+                <div class="sosmed">
+                    <a href="https://www.instagram.com/ofc.11tkjtwo/"><img src="images/instagram-prof.png" alt=""></a>
+                    <a href="segera.html"><img src="images/youtube-prof.png" alt=""></a>
+                    <a href="segera.html"><img src="images/facebook-prof.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+<script>
+    const navbar = document.querySelector("nav");
+
+    window.onscroll = () => {
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+    const menuToggle = document.querySelector(".menu-toggle input");
+    const nav = document.querySelector("nav ul");
+
+    menuToggle.addEventListener('click', function () {
+        nav.classList.toggle("slide");
+    })
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>

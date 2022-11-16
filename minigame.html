@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKAJE DUA | Mini Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="images/x-icon" href="images/tkj-100.png">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="nav wrapper">
+                <h3>TEKAJE DUA</h3>
+
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="struktur.html">Struktur</a></li>
+                    <li><a href="album.html">Album</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <a href="#header" class="scroll"><img src="images/double-up-arrow.png" alt=""></a>
+
+        <header id="header">
+            <div class="header wrapper">
+                <img class="main-img" src="images/telahhadir.png" alt="">
+
+                <div class="desc">
+                    <p><span>TKJ DUA</span></p>
+                    <h1>Mini Game</h1>
+                    <P>Ayo mainkan mini game yang telah kami (Tekaje Dua) buat dan kalahkan semua lawanmu.</P>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section wrapper">
+
+                <a data-aos="fade-up" href="tekaje-toe-index.html" class="section-list">
+                    <img class="sec-img" src="images/tekaje-toe (2).jpg" alt="">
+
+                    <div class="section-desc">
+                        <p>
+                            <span>Mini Game</span>
+                        </p>
+                        <h1>Tekaje Toe</h1>
+                        <P>Game ini adalah game Tic Tac Toe. game bisa kamu mainkan bersama temanmu.</P>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        
+    <footer data-aos="fade-up" >
+        <div class="footer wrapper">
+            <div class="footer-desc">
+                <h1>TEKAJE DUA</h1>
+                <p>Here we make a lot of memory.</p>
+            </div>
+
+            <div class="sosmed">
+                <a href="https://www.instagram.com/ofc.11tkjtwo/"><img src="images/instagram-prof.png" alt=""></a>
+                <a href="segera.html"><img src="images/youtube-prof.png" alt=""></a>
+                <a href="segera.html"><img src="images/facebook-prof.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+<script>
+    const navbar = document.querySelector("nav");
+
+    window.onscroll = () => {
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+    const menuToggle = document.querySelector(".menu-toggle input");
+    const nav = document.querySelector("nav ul");
+
+    menuToggle.addEventListener('click', function () {
+        nav.classList.toggle("slide");
+    })
+
+    // alert("Tekaje Website Demo part II //Beranda & Struktur Kelas//");
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>
