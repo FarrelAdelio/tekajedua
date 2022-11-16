@@ -351,7 +351,7 @@ footer {
         top: 0;
         left: 0;
         right: 0;
-        background-color: rgb(255, 255, 255, 0.8);
+        background-color: #f8f8f8cc;
         backdrop-filter: blur(3px);
         text-align: center;
         transform: translateY(-100%);
